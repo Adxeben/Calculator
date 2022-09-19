@@ -13,7 +13,7 @@ html{
 }
 
 body{
-    background:linear-gradient(rgba(8, 8, 8, 0.1), rgba(2, 2, 2, 0.7)), url('/public/img/We-Are-Creative.jpg');
+    background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('../../public/img/We-Are-Creative.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -28,16 +28,16 @@ body{
 //------------ header ------------//
 .navbar{
     background:rgb(1, 11, 68);
-    padding:30px 0;
+    padding:1.7rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
     color:#ffff;
-    font-size:30px;
+    font-size:1.885rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight:400;
-    letter-spacing: 4px;
-    text-shadow: 2px 2px 4px red;
+    letter-spacing: .25rem;
+    text-shadow: .125rem .125rem .25rem red;
     box-shadow: 0rem 0rem 0.2rem .0013rem rgba(153, 153, 153, 1) ;
 }
 
@@ -61,7 +61,7 @@ body{
             padding:1.875rem;
             font-size: 1.5625rem;
             border:.125rem solid #999;
-            border-bottom-width: 1px;
+            border-bottom-width: .0625rem;
             
         }
         .calc__button__list{
@@ -84,13 +84,17 @@ body{
                 color:#ffff;
 
                 &:hover{
-                    @extend #calc__equalTo;
+                    // @extend #calc__equalTo;
+                    background:rgb(22, 1, 56);
+                    color:#ffff;
                     transition:all 0.5s ease-in-out;
                 }
             }
             #calc__equalTo{
                 background:rgb(22, 1, 56);
                 color:#ffff;
+                grid-column: 2/5;
+                
             }
         }
     }
@@ -104,8 +108,8 @@ body{
     align-items: center;
     z-index:-1;
     text-transform: capitalize;
-    font-size: 10px;
-    letter-spacing: 4px;
+    font-size: .625rem;
+    letter-spacing: .25rem;
     
 
     p{
@@ -119,8 +123,4 @@ body{
 
 
 
-@media only screen and (min-width:300px){
-    .navbar{
-        text-align:center;
-    }
-}
+
